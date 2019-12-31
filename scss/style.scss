@@ -1,12 +1,14 @@
 $primary: #3292a6;
-$primary-overlay: rgba(50,146,166, 0.8);
+$primary-overlay: rgba(50,146,166, 0.4);
 
 body{
     margin-top: 105px;
 }
+.newbg {
+    background: $primary;
+}
 
 .navbar {
-    box-shadow: 2px 2px 5px $primary;
     opacity: 0.9;
     background: #fff;
 
@@ -36,8 +38,35 @@ body{
     padding-top: 80px;
 }
 
+.boxes {
+    box-shadow: 5px 5px darkgray;
+}
+
 .lambow-img {
     border-radius: 15px;
     border: solid 2px white;
     opacity: 0.6;
+}
+
+.allura {
+    font-family: 'Allura', cursive;
+}
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    #showcase {
+        min-height: 500px;
+        h1{
+            font-size: 4rem;
+        }
+    }
+
+    .mb-resp{
+        margin-bottom: 1rem;
+    }
 }
