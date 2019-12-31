@@ -1,11 +1,13 @@
 $primary: #3292a6;
 $primary-overlay: rgba(50,146,166, 0.4);
-
+.maincolor{
+    color: $primary;
+}
 body{
     margin-top: 105px;
 }
 .newbg {
-    background: $primary;
+    background: #3292a6;
 }
 
 .navbar {
@@ -53,7 +55,26 @@ body{
 }
 
 
+// About
+#about {
+    h1, p {
+    color: $primary;   
+    width: 75%;
+    margin: auto; 
+    font-family: allura;    
+    }
 
+    h1 {
+        font-size: 55px;
+    }
+    p {
+        padding-bottom: 1.1rem;;
+        border-bottom: 1px #ddd solid;
+        font-size: 25px;
+    }
+
+
+}
 
 
 

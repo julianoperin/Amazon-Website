@@ -1,3 +1,6 @@
+.maincolor {
+  color: #3292a6; }
+
 body {
   margin-top: 105px; }
 
@@ -36,6 +39,18 @@ body {
 
 .allura {
   font-family: 'Allura', cursive; }
+
+#about h1, #about p {
+  color: #3292a6;
+  width: 75%;
+  margin: auto;
+  font-family: allura; }
+#about h1 {
+  font-size: 55px; }
+#about p {
+  padding-bottom: 1.1rem;
+  border-bottom: 1px #ddd solid;
+  font-size: 25px; }
 
 @media (max-width: 768px) {
   #showcase {
