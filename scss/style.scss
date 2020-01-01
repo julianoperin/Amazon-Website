@@ -75,7 +75,29 @@ body{
 
 
 }
+#authors {
+    img{
+        margin-top: -35%;
+    }
+    color: #3292a6;
 
+    .card:hover{
+        background: #3292a6;
+        color: #fff;
+    }
+    .fab{
+        color: #fff;
+    }
+    h1{
+        font-family: allura;
+        font-size: 50px;
+    }
+    .subtitle{
+        font-family: allura;
+        font-size: 35px;
+    }
+
+}
 
 
 
@@ -89,5 +111,9 @@ body{
 
     .mb-resp{
         margin-bottom: 1rem;
+    }
+
+    nav{
+        margin-right: 9px;
     }
 }

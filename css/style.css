@@ -52,6 +52,22 @@ body {
   border-bottom: 1px #ddd solid;
   font-size: 25px; }
 
+#authors {
+  color: #3292a6; }
+  #authors img {
+    margin-top: -35%; }
+  #authors .card:hover {
+    background: #3292a6;
+    color: #fff; }
+  #authors .fab {
+    color: #fff; }
+  #authors h1 {
+    font-family: allura;
+    font-size: 50px; }
+  #authors .subtitle {
+    font-family: allura;
+    font-size: 35px; }
+
 @media (max-width: 768px) {
   #showcase {
     min-height: 500px; }
@@ -59,4 +75,7 @@ body {
       font-size: 4rem; }
 
   .mb-resp {
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+
+  nav {
+    margin-right: 9px; } }
