@@ -68,6 +68,13 @@ body {
     font-family: allura;
     font-size: 35px; }
 
+.logo-form {
+  border-radius: 50%;
+  height: 200px; }
+
+#main-footer {
+  background: #3292a6; }
+
 @media (max-width: 768px) {
   #showcase {
     min-height: 500px; }
@@ -78,4 +85,7 @@ body {
     margin-bottom: 1rem; }
 
   nav {
-    margin-right: 9px; } }
+    margin-right: 9px; }
+
+  .logo-form {
+    display: none; } }

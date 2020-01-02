@@ -98,7 +98,14 @@ body{
     }
 
 }
+.logo-form {
+    border-radius: 50%;
+    height: 200px;
+}
 
+#main-footer {
+    background: #3292a6;
+}
 
 
 @media(max-width: 768px){
@@ -115,5 +122,8 @@ body{
 
     nav{
         margin-right: 9px;
+    }
+    .logo-form {
+        display: none;
     }
 }

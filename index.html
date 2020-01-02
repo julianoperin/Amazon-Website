@@ -13,8 +13,8 @@
   <title>Amazon</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-md navbar-light fixed-top py-2">
+<body id="home" data-spy="scroll" data-target="#main-nav">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-2" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand">
         <img id="logo-image" class="rounded-circle" src="img/logo.png" width="70" height="70" alt="logo">
@@ -31,7 +31,7 @@
           <a href="#about" class="nav-link text-info">About</a>
         </li>
         <li class="nav-item">
-          <a href="#employees" class="nav-link text-info">Schools</a>
+          <a href="#authors" class="nav-link text-info">Meet The Authors</a>
           </li>
         <li class="nav-item">
           <a href="#contact" class="nav-link text-info">Contact</a>
@@ -289,26 +289,61 @@
         </div>
       </section>
 
+      <!-- CONTACT -->
+      <section id="contact" class="contact bg-light py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9">
+              <h3>Get In Touch</h3>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse.</p>
+              <form>
+                <div class="input-group input-group-lg mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="input-group input-group-lg mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="input-group input-group-lg mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fas fa-pencil-alt"></i>
+                        </span>
+                      </div>
+                      <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                    </div>
 
+                    <input type="submit" value="Submit" class="border border-info btn btn-outline-info btn-block">
+              </form>
+            </div>
+            <div class="col-lg-3 align-self-center">
+              <img src="img/logo.png" alt="logo" class="img-fluid logo-form">
+            </div>
+          </div>
+        </div>
+      </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <!-- FOTTER -->
+      <section id="main-footer" class="pt-3 text-white">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 ml-auto">
+              <p class="lead">
+                Copyright &copy; <span id="year"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
@@ -324,6 +359,26 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    // Init ScrollSpy
+    $('body').scrollspy({target: '#main-nav'});
+
+    //Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+
   </script>
 </body>
 
